@@ -45,6 +45,9 @@ export default {
   offline_enabled: true,
   host_permissions: ["<all_urls>"],
   permissions: ["storage", "tabs", "background", "sidePanel"],
+  chrome_url_overrides: {
+    newtab: "src/ui/new-tab/index.html",
+  },
   web_accessible_resources: [
     {
       resources: [
